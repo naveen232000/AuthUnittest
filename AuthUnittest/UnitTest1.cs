@@ -14,9 +14,9 @@ namespace AuthUnittest
             string failCase = "Invalid Credientials";
             string nullCase = "Provide Username and password";
             string passCase = "Signin Success";
-            Assert.Equals(nullCase, auth.SignIn("",""));
-            Assert.Equals(failCase, auth.SignIn("Invalid", "Invalid@123"));
-            Assert.Equals(passCase, auth.SignIn("naveen", "naveen@123"));
+            Assert.AreEqual(nullCase, auth.SignIn("",""));
+            Assert.AreEqual(failCase, auth.SignIn("Invalid", "Invalid@123"));
+            Assert.AreEqual(passCase, auth.SignIn("naveen", "naveen@123"));
         }
     }
 }
